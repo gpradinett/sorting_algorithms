@@ -34,11 +34,11 @@
 
 ## Description of each file:
 
->## [0-bubble_sort.c](https://github.com/gpradinett/sorting_algorithms/blob/main/0-bubble_sort.c)
+>## [0-bubble_sort.c](https://github.com/gpradinett/sorting_algorithms/blob/main/0-bubble_sort.c) ➡️[_`video`_](https://youtu.be/lyZQPjUT5B4)📽️
 
-| **File** | **Description** | **opcional** | **opcional** | **otro mas** |
-| ------- | ------- | ------- | ------- | ------ |
-| [0-bubble_sort.c](https://github.com/gpradinett/sorting_algorithms/blob/main/0-bubble_sort.c) | Write a function that sorts an array of integers in ascending order using the [Bubble sort](https://en.wikipedia.org/wiki/Bubble_sort) algorithm | Prototype: _`void bubble_sort(int *array, size_t size);`_   | You’re expected to print the _`array`_ after each time you swap two elements | [video](https://youtu.be/lyZQPjUT5B4)
+| **File** | **Description** | **Requirements 1** | **Requirements2** |
+| ------- | ------- | ------- | ------- | 
+| [0-bubble_sort.c](https://github.com/gpradinett/sorting_algorithms/blob/main/0-bubble_sort.c) | Write a function that sorts an array of integers in ascending order using the [Bubble sort](https://en.wikipedia.org/wiki/Bubble_sort) algorithm | Prototype: _`void bubble_sort(int *array, size_t size);`_   | You’re expected to print the _`array`_ after each time you swap two elements | 
 | [0-O](https://github.com/gpradinett/sorting_algorithms/blob/main/0-O) | Write in the file _`0-O`_, the big O notations of the time complexity of the Bubble sort algorithm, with 1 notation per line: | in the best case  /   in the average case / in the worst case |
 
 ```
@@ -93,11 +93,11 @@ gpradinett@/tmp/sort$ ./bubble
 7, 13, 19, 48, 52, 71, 73, 86, 96, 99
 gpradinett@/tmp/sort$ 
 ```
->##  [1-insertion_sort_list.c](https://github.com/gpradinett/sorting_algorithms/blob/main/1-insertion_sort_list.c)
+>##  [1-insertion_sort_list.c](https://github.com/gpradinett/sorting_algorithms/blob/main/1-insertion_sort_list.c) ➡️[_`video`_](https://youtu.be/ROalU379l3U)📽️
 
-| **File** | **Description** | **opcional** | **opcional** | **otro mas** |
+| **File** | **Description** | **Requirements 1** | **Requirements2** | **Requirements 3** |
 | ------- | ------- | ------- | ------- | ------ |
-| [1-insertion_sort_list](https://github.com/gpradinett/sorting_algorithms/blob/main/1-insertion_sort_list.c) | Write a function that sorts a doubly linked list of integers in ascending order using the [Insertion sort](https://en.wikipedia.org/wiki/Insertion_sort) algorithm | Prototype: _`void insertion_sort_list(listint_t **list);`_ / |  You are not allowed to modify the integer _`n`_ of a node. You have to swap the nodes themselves. | You’re expected to print the _`list`_ after each time you swap two elements (See example below) |
+| [1-insertion_sort_list](https://github.com/gpradinett/sorting_algorithms/blob/main/1-insertion_sort_list.c) | Write a function that sorts a doubly linked list of integers in ascending order using the [Insertion sort](https://en.wikipedia.org/wiki/Insertion_sort) algorithm | Prototype: _`void insertion_sort_list(listint_t **list);`_ / |  You are not allowed to modify the integer _`n`_ of a node. You have to swap the nodes themselves. | You’re expected to print the _`list`_ after each time you swap two elements |
 | [1-O](https://github.com/gpradinett/sorting_algorithms/blob/main/1-O) | Write in the file 1-O, the big O notations of the time complexity of the Insertion sort algorithm, with 1 notation per line: | in the best case / in the average case / in the worst case |
 
 ```
@@ -182,6 +182,55 @@ gpradinett@/tmp/sort$ ./insertion
 13, 19, 48, 7, 52, 71, 73, 86, 96, 99
 13, 19, 7, 48, 52, 71, 73, 86, 96, 99
 13, 7, 19, 48, 52, 71, 73, 86, 96, 99
+7, 13, 19, 48, 52, 71, 73, 86, 96, 99
+
+7, 13, 19, 48, 52, 71, 73, 86, 96, 99
+gpradinett@/tmp/sort$
+```
+
+>## [2-selection_sort.c](https://github.com/gpradinett/sorting_algorithms/blob/main/2-selection_sort.c) ➡️[_`video`_](https://youtu.be/Ns4TPTC8whw)📽️
+
+
+| **File** | **Description** | **Requirements 1** | **Requirements2** | **Requirements 3** |
+| ------- | ------- | ------- | ------- | ------ |
+| [2-selection_sort.c](https://github.com/gpradinett/sorting_algorithms/blob/main/2-selection_sort.c) | Write a function that sorts an array of integers in ascending order using the [Selection sort](https://en.wikipedia.org/wiki/Selection_sort) algorithm | Prototype: _`void selection_sort(int *array, size_t size);`_ |  You’re expected to print the _`array`_ after each time you swap two elements | 
+| [ 2-O]() | Write in the file _`2-O`_, the big O notations of the time complexity of the Selection sort algorithm, with 1 notation per line: | in the best case / in the average case / in the worst case 
+
+
+```
+gpradinett@/tmp/sort$ cat 2-main.c
+#include <stdio.h>
+#include <stdlib.h>
+#include "sort.h"
+
+/**
+ * main - Entry point
+ *
+ * Return: Always 0
+ */
+int main(void)
+{
+    int array[] = {19, 48, 99, 71, 13, 52, 96, 73, 86, 7};
+    size_t n = sizeof(array) / sizeof(array[0]);
+
+    print_array(array, n);
+    printf("\n");
+    selection_sort(array, n);
+    printf("\n");
+    print_array(array, n);
+    return (0);
+}
+gpradinett@/tmp/sort$ gcc -Wall -Wextra -Werror -pedantic  -std=gnu89 
+2-main.c 2-selection_sort.c print_array.c -o select
+gpradinett@/tmp/sort$ ./select
+19, 48, 99, 71, 13, 52, 96, 73, 86, 7
+
+7, 48, 99, 71, 13, 52, 96, 73, 86, 19
+7, 13, 99, 71, 48, 52, 96, 73, 86, 19
+7, 13, 19, 71, 48, 52, 96, 73, 86, 99
+7, 13, 19, 48, 71, 52, 96, 73, 86, 99
+7, 13, 19, 48, 52, 71, 96, 73, 86, 99
+7, 13, 19, 48, 52, 71, 73, 96, 86, 99
 7, 13, 19, 48, 52, 71, 73, 86, 96, 99
 
 7, 13, 19, 48, 52, 71, 73, 86, 96, 99
