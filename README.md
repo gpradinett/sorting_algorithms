@@ -34,7 +34,7 @@
 
 ## Description of each file:
 
->## [0-bubble_sort.c](https://github.com/gpradinett/sorting_algorithms/blob/main/0-bubble_sort.c) ➡️[_`video`_](https://youtu.be/lyZQPjUT5B4)📽️
+># [0-bubble_sort.c](https://github.com/gpradinett/sorting_algorithms/blob/main/0-bubble_sort.c) ➡️[_`video`_](https://youtu.be/lyZQPjUT5B4)📽️
 
 | **File** | **Description** | **Requirements 1** | **Requirements2** |
 | ------- | ------- | ------- | ------- | 
@@ -93,7 +93,7 @@ gpradinett@/tmp/sort$ ./bubble
 7, 13, 19, 48, 52, 71, 73, 86, 96, 99
 gpradinett@/tmp/sort$ 
 ```
->##  [1-insertion_sort_list.c](https://github.com/gpradinett/sorting_algorithms/blob/main/1-insertion_sort_list.c) ➡️[_`video`_](https://youtu.be/ROalU379l3U)📽️
+>#  [1-insertion_sort_list.c](https://github.com/gpradinett/sorting_algorithms/blob/main/1-insertion_sort_list.c) ➡️[_`video`_](https://youtu.be/ROalU379l3U)📽️
 
 | **File** | **Description** | **Requirements 1** | **Requirements2** | **Requirements 3** |
 | ------- | ------- | ------- | ------- | ------ |
@@ -188,7 +188,7 @@ gpradinett@/tmp/sort$ ./insertion
 gpradinett@/tmp/sort$
 ```
 
->## [2-selection_sort.c](https://github.com/gpradinett/sorting_algorithms/blob/main/2-selection_sort.c) ➡️[_`video`_](https://youtu.be/Ns4TPTC8whw)📽️
+># [2-selection_sort.c](https://github.com/gpradinett/sorting_algorithms/blob/main/2-selection_sort.c) ➡️[_`video`_](https://youtu.be/Ns4TPTC8whw)📽️
 
 
 | **File** | **Description** | **Requirements 1** | **Requirements2** | **Requirements 3** |
