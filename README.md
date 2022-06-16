@@ -38,11 +38,11 @@
 
 | **File** | **Description** | **opcional** | **opcional** | **otro mas** |
 | ------- | ------- | ------- | ------- | ------ |
-| [0-bubble_sort.c](https://github.com/gpradinett/sorting_algorithms/blob/main/0-bubble_sort.c) | Write a function that sorts an array of integers in ascending order using the [Bubble sort](https://en.wikipedia.org/wiki/Bubble_sort) algorithm | Prototype: _`void bubble_sort(int *array, size_t size);`_   | You’re expected to print the _`array`_ after each time you swap two elements (See example below) | [video](https://youtu.be/lyZQPjUT5B4)
+| [0-bubble_sort.c](https://github.com/gpradinett/sorting_algorithms/blob/main/0-bubble_sort.c) | Write a function that sorts an array of integers in ascending order using the [Bubble sort](https://en.wikipedia.org/wiki/Bubble_sort) algorithm | Prototype: _`void bubble_sort(int *array, size_t size);`_   | You’re expected to print the _`array`_ after each time you swap two elements | [video](https://youtu.be/lyZQPjUT5B4)
 | [0-O](https://github.com/gpradinett/sorting_algorithms/blob/main/0-O) | Write in the file _`0-O`_, the big O notations of the time complexity of the Bubble sort algorithm, with 1 notation per line: | in the best case  /   in the average case / in the worst case |
 
 ```
-alex@/tmp/sort$ cat 0-main.c 
+gpradinett@/tmp/sort$ cat 0-main.c 
 #include <stdio.h>
 #include <stdlib.h>
 #include "sort.h"
@@ -64,8 +64,8 @@ int main(void)
     print_array(array, n);
     return (0);
 }
-alex@/tmp/sort$ gcc -Wall -Wextra -Werror -pedantic  -std=gnu89 0-bubble_sort.c 0-main.c print_array.c -o bubble
-alex@/tmp/sort$ ./bubble
+gpradinett@/tmp/sort$ gcc -Wall -Wextra -Werror -pedantic  -std=gnu89 0-bubble_sort.c 0-main.c print_array.c -o bubble
+gpradinett@/tmp/sort$ ./bubble
 19, 48, 99, 71, 13, 52, 96, 73, 86, 7
 
 19, 48, 71, 99, 13, 52, 96, 73, 86, 7
@@ -91,7 +91,7 @@ alex@/tmp/sort$ ./bubble
 7, 13, 19, 48, 52, 71, 73, 86, 96, 99
 
 7, 13, 19, 48, 52, 71, 73, 86, 96, 99
-alex@/tmp/sort$ 
+gpradinett@/tmp/sort$ 
 ```
 >##  [1-insertion_sort_list.c](https://github.com/gpradinett/sorting_algorithms/blob/main/1-insertion_sort_list.c)
 
@@ -101,7 +101,7 @@ alex@/tmp/sort$
 | [1-O](https://github.com/gpradinett/sorting_algorithms/blob/main/1-O) | Write in the file 1-O, the big O notations of the time complexity of the Insertion sort algorithm, with 1 notation per line: | in the best case / in the average case / in the worst case |
 
 ```
-alex@/tmp/sort$ cat 1-main.c
+gpradinett@/tmp/sort$ cat 1-main.c
 #include <stdio.h>
 #include <stdlib.h>
 #include "sort.h"
@@ -158,8 +158,8 @@ int main(void)
     print_list(list);
     return (0);
 }
-alex@/tmp/sort$ gcc -Wall -Wextra -Werror -pedantic  -std=gnu89 1-main.c 1-insertion_sort_list.c print_list.c -o insertion
-alex@/tmp/sort$ ./insertion
+gpradinett@/tmp/sort$ gcc -Wall -Wextra -Werror -pedantic  -std=gnu89 1-main.c 1-insertion_sort_list.c print_list.c -o insertion
+gpradinett@/tmp/sort$ ./insertion
 19, 48, 99, 71, 13, 52, 96, 73, 86, 7
 
 19, 48, 71, 99, 13, 52, 96, 73, 86, 7
@@ -185,5 +185,5 @@ alex@/tmp/sort$ ./insertion
 7, 13, 19, 48, 52, 71, 73, 86, 96, 99
 
 7, 13, 19, 48, 52, 71, 73, 86, 96, 99
-alex@/tmp/sort$
+gpradinett@/tmp/sort$
 ```
